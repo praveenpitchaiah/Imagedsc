@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+      body {
+        background: linear-gradient(to bottom, #cbbce0, #c7beb0);
+      }
+      .center-div {
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center-div">
+      <img
+        src="{{url_for('static', filename='file.jpg')}}"
+        alt="image"
+        height="340px"
+      />
+      <h1>{{final}}</h1>
+    </div>
+  </body>
+</html>

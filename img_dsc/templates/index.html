@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+      .center-div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      body {
+        background: linear-gradient(to bottom, #7850ad, #a99372);
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center; color: brown">
+      <h2>Image descriptor</h2>
+    </div>
+    <div class="center-div">
+      <form
+        action="{{url_for('after')}}"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <input type="file" name="file1" class="btn btn-primary" /><br /><br />
+        <input
+          type="submit"
+          name="btn"
+          value="      predict caption"
+          class="btn btn-success"
+        />
+      </form>
+    </div>
+  </body>
+</html>
